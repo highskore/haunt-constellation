@@ -1,6 +1,17 @@
+<div align="center">
+
+<img src="docs/icon.png" width="96" alt="">
+
 # Constellation
 
-Your agent fleet as a night sky.
+**Your agent fleet as a night sky.**
+
+[![Haunt plugin](https://img.shields.io/badge/Haunt-plugin-D97757)](https://github.com/highskore/haunt-hackathon)
+![Plugin API 0.5](https://img.shields.io/badge/plugin%20API-0.5-111)
+![WASM component](https://img.shields.io/badge/WASM-component-654ff0?logo=webassembly&logoColor=white)
+![MIT licence](https://img.shields.io/badge/licence-MIT-6b7280)
+
+</div>
 
 Run **Constellation** from the ⌘K palette and a window opens that you can move to a second display. Each repo is a constellation and each agent a star, joined by faint lines. A star grows bigger and brighter the more tool calls its agent made in the last 5 minutes; a finished agent dims. Running subagents sit around their star as moons. A star that needs you turns orange and pulses, and its constellation is labelled `needs you`. The others read `web · 2 subagents`, `infra · idle` or just the repo name.
 
