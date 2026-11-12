@@ -1,0 +1,21 @@
+[plugin]
+id = "dev.haunt.constellation"
+name = "Constellation"
+description = "Your agent fleet as a night sky"
+version = "0.1.0"
+api = "0.5"
+entry = "target/wasm32-wasip2/release/haunt_plugin.wasm"
+license = "MIT"
+
+[capabilities]
+events = ["agent.session-start", "agent.prompt", "agent.subagent", "agent.tool", "agent.permission-request", "agent.notification", "agent.stop", "agent.unknown"]
+panel = true
+timer = true
+
+[contributes]
+commands = [{ id = "show", title = "Constellation" }]
+
+[settings]
+background = { type = "bool", default = true, description = "Faint background stars, for the look only" }
+labels = { type = "bool", default = true, description = "Name each constellation" }
+unverified = { type = "bool", default = false, description = "Also follow events without the tab's nonce, which anything in the terminal can forge" }
